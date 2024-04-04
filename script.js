@@ -61,11 +61,18 @@ var usStates = [
     { name: 'WYOMING', abbreviation: 'WY' }
 ];
 
+// retrieve state by id
 var stateSelect = document.getElementById('state');
 
+// illiterate through states array and 
 for (var i = 0; i < usStates.length; i++) {
     var option = document.createElement("option");
-    option.text = usStates[i].abbreviation;
-    option.value = usStates[i].abbreviation;
-    stateSelect.add(option);
+    option.text = usStates[i].abbreviation; // set abbreviation to text
+    option.value = usStates[i].abbreviation; // set abbreviation to value
+    stateSelect.add(option); // add abbreviation to stateselect
+}
+
+// reset function
+function reset() {
+    document.getElementById("form").reset();
 }
