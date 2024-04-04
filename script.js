@@ -63,7 +63,7 @@ var usStates = [
 
 var stateSelect = document.getElementById('state');
 
-for(var i = 0; i < usStates.length; i++) {
+for (var i = 0; i < usStates.length; i++) {
     var option = document.createElement("option");
     option.text = usStates[i].abbreviation;
     option.value = usStates[i].abbreviation;
