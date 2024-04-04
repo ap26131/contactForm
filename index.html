@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <div class="form-container">
+        <form action="/thankyou_page.php">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            
+            <label for="state">State:</label>
+            <select name="state" id="state"></select>
+            
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip">
+            
+            <label for="tphone">Telephone:</label>
+            <input type="text" id="tphone" name="tphone">
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+    </div>
+    <div class="btns-container">
+        <button type="reset">Reset</button>
+        <button type="submit">Save to Database</button>
+        <button tyoe="submit">Save to File</button>
+    </div>
+<body>
+<script src="script.js"></script>
+</html>
