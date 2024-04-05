@@ -76,3 +76,8 @@ for (var i = 0; i < usStates.length; i++) {
 function reset() {
     document.getElementById("form").reset();
 }
+
+// submit to file function
+function submitFile() {
+    document.getElementById("form").submit();
+}
