@@ -6,7 +6,7 @@
 <body>
     <div class="container">
         <h2>Contact Form</h2>
-        <form id="form" action="/thankyou_page.php">
+        <form id="form" action="/thankyou_page.php" method="post">
             <div class="row">
                 <div class="col-25">
                     <label for="fname">First Name:</label>
@@ -66,7 +66,7 @@
             <div class="btns-container">
                 <button type="reset" onclick="reset()">Reset</button>
                 <button type="submit">Save to Database</button>
-                <button tyoe="submit">Save to File</button>
+                <button tyoe="submit" onclick="submitFile()">Save to File</button>
             </div>
             <div class="link-container">
                 <a href="default.asp" target="_blank">View contacts in database</a>
