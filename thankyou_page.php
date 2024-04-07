@@ -2,7 +2,7 @@
     <body>
         <h1>Thank you for Registration!</h1>
         <p>Your information is:</p>
-        <p>First Name: <?php echo $_POST[‘fnamee’] ?>
+        <p>First Name: <?php echo $_POST[‘fname’] ?>
         <p>Last Name: <?php echo $_POST[‘lname’] ?>
         <p>Address Name: <?php echo $_POST[‘address’] ?>
         <p>State: <?php echo $_POST[‘state’] ?>
