@@ -40,8 +40,8 @@ select {
 }
 
 .col-75 {
-  float: right;
-  width: 75%;
+  float: inline-start;
+  width: 50%;
   margin-top: 6px;
 }
 
