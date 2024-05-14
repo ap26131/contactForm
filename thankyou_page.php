@@ -16,6 +16,20 @@
 			<p>Email: <?php echo $_POST['email']?></p>
 			<div class="link-container"> 
 				<a href="index.html">Return to the main Page</a> 
+				<?php 
+				$fname = $_POST['fname'];
+				$lname = $_POST['lname'];
+				$address = $_POST['address'];
+				$state = $_POST['state'];
+				$zip = $_POST['zip'];
+				$tphone = $_POST['tphone'];
+				$email = $_POST['email'];
+				
+				$data = "First Name: $fname\nLast Name: $lname\nAddress: $address\nState: $state\nZip: $zip\nTelephone: $tphone\nEmail: $email\n";
+				$file = fopen("contactList.txt", "a") or die("Unable to open file");
+				fwrite($file,$data);
+				fclose($file);
+				?>
 			</div>
 		</div>
     </body>

@@ -12,7 +12,7 @@
                     <label for="fname">First Name:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" required>
                 </div>
             </div>
             <div class="row">
@@ -20,7 +20,7 @@
                     <label for="lname">Last Name:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="lname" name="lname">
+                    <input type="text" id="lname" name="lname" required>
                 </div>
             </div>
             <div class="row">
@@ -28,7 +28,7 @@
                     <label for="address">Address:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="address" name="address">
+                    <input type="text" id="address" name="address" placeholder="Use # address, City format" pattern="\d+\s+[A-Za-z\s]+,\s+[A-Za-z\s]+" required>
                 </div>
             </div>
             <div class="row">
@@ -36,7 +36,7 @@
                     <label for="state">State:</label>
                 </div>
                 <div class="col-75">
-                    <select name="state" id="state"></select>
+                    <select name="state" id="state" required></select>
                 </div>
             </div>
             <div class="row">
@@ -44,7 +44,7 @@
                     <label for="zip">Zip:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="zip" name="zip">
+                    <input type="text" id="zip" name="zip" pattern="\d{5}" placeholder="Please enter a valid five-digit zip code" required>
                 </div>
             </div>
             <div class="row">
@@ -52,7 +52,7 @@
                     <label for="tphone">Telephone:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="tphone" name="tphone">
+                    <input type="text" id="tphone" name="tphone" placeholder="Use XXX-XXX-XXXX format" pattern="\d{3}-\d{3}-\d{4}" required>
                 </div>
             </div>
             <div class="row">
@@ -60,7 +60,7 @@
                     <label for="email">Email:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" type="email" placeholder="Enter a valid email address" required>
                 </div>
             </div>
             <div class="btns-container">
@@ -69,9 +69,9 @@
                 <button>Save to File</button>
             </div>
             <div class="link-container">
-                <a href="default.asp" target="_blank">View contacts in database</a>
+                <a>View contacts in database</a>
                 <br></br>
-                <a href="default.asp" target="_blank">View contacts in file</a>
+                <a href="view_Contacts.php">View contacts in file</a>
             </div>
 		</form>
     </div>
